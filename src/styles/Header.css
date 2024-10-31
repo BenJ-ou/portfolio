@@ -1,0 +1,48 @@
+.backgroundText{
+	background-color: var(--bg);
+	color:var(--text);
+	width: 100%;
+	border-radius: 3px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	padding:30px;
+  
+}
+
+
+.page-content .backgroundText p{
+	text-align: justify;
+	padding-left: 20px;
+  font-family:'Noto Sans JP', sans-serif;
+}
+
+
+.page-content .backgroundText header h1{
+    font-family:'Noto Sans JP', sans-serif;
+}
+
+
+
+a.button {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    border: 0.16em solid var(--borderButton);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: var(--btn);
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    transition: all 0.2s;
+  	text-align: center;
+  	margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  a.button:hover {
+    color: rgb(238,238,240);
+    background-color: rgb(247,128,104);
+    border: 0.16em solid rgb(238,238,240);
+  }

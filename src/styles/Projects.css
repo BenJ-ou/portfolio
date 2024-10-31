@@ -1,0 +1,79 @@
+/* Section des projets */
+
+.page-content .projects-section {
+	margin-top: 6%;
+}
+
+.page-content .projects-section h1 {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 30px;
+}
+
+.page-content .projects-section .projects {
+	display: flex;
+	flex-wrap: wrap;
+ 
+}
+
+.page-content .projects-section .project {
+	margin-right: 20px;
+	max-width: 195px;
+}
+
+.page-content .projects-section .project h4 {
+	margin: 0;
+}
+
+.page-content .projects-section .project .description {
+	font-size: 10px;
+}
+
+.page-content .projects-section .project .dates {
+	font-size: 13px;
+	color: rgb(145, 145, 145);
+}
+
+
+/* Cartes des projets */
+
+.card {
+	display: block;
+	width: 90%;
+	max-width: 15rem;
+	margin: 1rem;
+	padding: 1em 0.5em;
+	color: black;
+	background-color: rgb(255, 245, 238);
+	border-radius: 5px;
+	box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	transition: transform 0.1s, box-shadow 0.1s;
+	text-decoration: none;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem #d2691e;
+}
+
+.card h4 {
+	margin: 0 0 0.5em;
+}
+
+.card p {
+	margin: 0;
+	font-size: 14px;
+}
+
+.card img {
+	width: 244px;
+	height: 244px;
+	border-radius: 2px;
+}
+
+
+/* Section des projets */
+
+.projects {
+	padding: 80px;
+}
