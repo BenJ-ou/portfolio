@@ -1,18 +1,33 @@
 import { createStore } from 'redux';
 
 const initialState = {
-  theme: 'light',
+  contactForm: {
+    name: '',
+    email: '',
+    message: '',
+  },
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'TOGGLE_THEME':
-      return { ...state, theme: state.theme === 'light' ? 'dark' : 'light' };
+    case 'UPDATE_CONTACT_FORM':
+      return {
+        ...state,
+        contactForm: {
+          ...state.contactForm,
+          [action.payload.name]: action.payload.value,
+        },
+      };
     default:
       return state;
   }
 };
 
 const store = createStore(reducer);
+
+export const updateContactForm = (name, value) => ({
+  type: 'UPDATE_CONTACT_FORM',
+  payload: { name, value },
+});
 
 export default store;
