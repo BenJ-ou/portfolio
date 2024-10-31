@@ -8,10 +8,15 @@ html{
   }
   
   
-  section #experience .experience-formation h1 {
+  section #experience {
       font-family:'Noto Sans JP', sans-serif;
+      
   }
-  
+   .experience-formation h1{
+    margin-left: 25px;
+   }
+
+
   .wrapper{
     max-width: 1080px;
     margin: 50px auto;
