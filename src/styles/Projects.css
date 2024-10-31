@@ -89,18 +89,21 @@
 
 @media (max-width: 768px) {
     .page-content .projects-section .projects {
-        justify-content: center; 
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
     }
 
     .page-content .projects-section .project {
-        margin-right: 0; 
-        margin-bottom: 20px;
-        max-width: 90%;
+        margin: 1rem;
+        width: 80%;
+        max-width: 300px;
     }
 
     .card {
-        width: 80%; 
-        max-width: 90%;
+        width: 100%;
+        min-height: 250px; 
     }
 
     .card img {
@@ -108,3 +111,7 @@
         height: auto; 
     }
 }
+
+
+
+

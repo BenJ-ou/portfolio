@@ -34,14 +34,14 @@ nav ul {
 nav ul li {
 	margin-left: 20px;
 	cursor: pointer;
-	border-bottom: none; /* Supprime la bordure par défaut */
+	border-bottom: none; 
 }
 
 nav ul li:hover {
-	border-bottom: 1px solid black; /* Ajoute la bordure uniquement au survol */
+	border-bottom: 1px solid black; 
 }
 
 nav ul li a {
-	text-decoration: none; /* Supprime le soulignement par défaut des liens */
-	color: inherit; /* Assure que la couleur du texte est héritée de l'élément parent */
+	text-decoration: none; 
+	color: inherit; 
 }
