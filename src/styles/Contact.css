@@ -1,18 +1,19 @@
 /* src/components/Contact/Contact.css */
-.contact-wrapper {
-  max-width: 1080px;
+.contact-container {
+  max-width: 800px; /* Réduction de la largeur */
   margin: 50px auto;
   padding: 20px;
-  background-color: var(--timeline); /* même couleur de fond que le wrapper */
+  background-color: var(--timeline); /* couleur de fond personnalisée */
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-wrapper h2 {
+.contact-title {
   font-size: 24px;
   font-weight: 600;
   color: #ff7979; /* Couleur similaire à celle utilisée dans les icônes */
-  text-align: center;
+  text-align: left; /* Alignement du titre à gauche */
+  margin-left: 20px; /* Décalage du titre vers la droite */
   margin-bottom: 20px;
 }
 
@@ -22,7 +23,7 @@
   border-radius: 5px;
 }
 
-.contact-form label {
+.form-label {
   font-size: 18px;
   font-weight: 500;
   color: #333;
@@ -30,8 +31,8 @@
   margin-bottom: 8px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.form-input,
+.form-textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -40,7 +41,7 @@
   font-size: 16px;
 }
 
-.contact-form button {
+.form-button {
   width: 100%;
   padding: 10px;
   background-color: #ff7979;
@@ -53,6 +54,13 @@
   transition: transform 0.3s ease;
 }
 
-.contact-form button:hover {
+.form-button:hover {
   transform: scale(0.97);
+}
+
+.success-message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #28a745; /* Vert pour le succès */
+  text-align: center;
 }

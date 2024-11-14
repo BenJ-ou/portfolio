@@ -1,55 +1,91 @@
-import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { updateContactForm } from '../redux/store';
+import React, { useState, useEffect } from 'react';
 import '../styles/Contact.css'; 
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-  const dispatch = useDispatch();
-  const { name, email, message } = useSelector((state) => state.contactForm);
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [isSent, setIsSent] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+    script.onload = () => {
+      emailjs.init('-YFTIKWXB8p5uB2Q_'); 
+    };
+    document.body.appendChild(script);
+  }, []);
 
   const handleChange = (e) => {
-      const { name, value } = e.target;
-      dispatch(updateContactForm(name, value));
+    const { name, value } = e.target;
+    setFormState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = (e) => {
-      e.preventDefault();
-      console.log('Formulaire soumis:', { name, email, message });
+  const sendEmail = (e) => {
+    e.preventDefault();
+    window.emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formState)
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsSent(true);
+          setFormState({ name: '', email: '', message: '' });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
-      <div className="contact-wrapper">
-          <h2>Contactez-moi</h2>
-          <form className="contact-form" onSubmit={handleSubmit}>
-              <label htmlFor="name">Nom :</label>
-              <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={name}
-                  onChange={handleChange}
-              />
-
-              <label htmlFor="email">Email :</label>
-              <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={email}
-                  onChange={handleChange}
-              />
-
-              <label htmlFor="message">Message :</label>
-              <textarea
-                  id="message"
-                  name="message"
-                  value={message}
-                  onChange={handleChange}
-              ></textarea>
-
-              <button type="submit">Envoyer</button>
-          </form>
-      </div>
+    
+    <div className="contact-container">
+      <h2 className="contact-title">Prendre contact</h2>
+      {isSent ? (
+        <p className="success-message">Votre message a été envoyé avec succès !</p>
+      ) : (
+        <form className="contact-form" onSubmit={sendEmail}>
+          <label className="form-label">
+            Nom:
+            <input
+              className="form-input"
+              type="text"
+              name="name"
+              value={formState.name}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label className="form-label">
+            Email:
+            <input
+              className="form-input"
+              type="email"
+              name="email"
+              value={formState.email}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label className="form-label">
+            Message:
+            <textarea
+              className="form-textarea"
+              name="message"
+              value={formState.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </label>
+          <button className="form-button" type="submit">Envoyer</button>
+        </form>
+      )}
+    </div>
   );
 };
 
