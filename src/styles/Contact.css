@@ -64,3 +64,11 @@
   color: #28a745; /* Vert pour le succès */
   text-align: center;
 }
+
+
+.error-message {
+  color: #d9534f; /* Rouge pour l'erreur */
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
