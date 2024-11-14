@@ -1,19 +1,16 @@
-/* src/components/Contact/Contact.css */
+/* src/components/Contact/Contact.scss */
 .contact-container {
-  max-width: 800px; /* Réduction de la largeur */
+  max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: var(--timeline); /* couleur de fond personnalisée */
+  background-color: var(--timeline);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-title {
   font-size: 24px;
-  font-weight: 600;
-  color: #ff7979; /* Couleur similaire à celle utilisée dans les icônes */
-  text-align: left; /* Alignement du titre à gauche */
-  margin-left: 20px; /* Décalage du titre vers la droite */
+  margin-left: 20px;
   margin-bottom: 20px;
 }
 
@@ -21,6 +18,10 @@
   background: #fff;
   padding: 20px;
   border-radius: 5px;
+}
+
+.field {
+  margin-bottom: 15px;
 }
 
 .form-label {
@@ -31,8 +32,9 @@
   margin-bottom: 8px;
 }
 
-.form-input,
-.form-textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -41,7 +43,12 @@
   font-size: 16px;
 }
 
-.form-button {
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+input[type="submit"] {
   width: 100%;
   padding: 10px;
   background-color: #ff7979;
@@ -54,20 +61,19 @@
   transition: transform 0.3s ease;
 }
 
-.form-button:hover {
+input[type="submit"]:hover {
   transform: scale(0.97);
 }
 
 .success-message {
   margin-top: 20px;
   font-size: 16px;
-  color: #28a745; /* Vert pour le succès */
+  color: #28a745;
   text-align: center;
 }
 
-
 .error-message {
-  color: #d9534f; /* Rouge pour l'erreur */
+  color: #d9534f;
   font-size: 16px;
   text-align: center;
   margin-top: 10px;
