@@ -11,7 +11,7 @@ const Navbar = () => {
       <ul>
         <li><a href="#projects-section">Mes projets</a></li>
         <li><a target="_blank" href="/image/Dev-web-Intégrateur-CV.pdf">Curriculum Vitae</a></li>
-        <li><a target="_blank" href="https://github.com/BenjaminPrince">Github</a></li>
+        <li><a target="_blank" href="https://github.com/BenJ-ou">Github</a></li>
       </ul>
     </nav>
   );

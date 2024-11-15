@@ -6,6 +6,20 @@ const Experience = () => {
   const experiences = [
     {
       icon: 'fa-star',
+      title: 'Alternance Marco Vasco',
+      year: '2023-2024',
+      location: 'Lyon ',
+      description: 'Agence de Voyage - Front-end - Svelte - Typescript',
+    },
+    {
+      icon: 'fa-star',
+      title: 'Formation Oppenclassrooms',
+      year: '2023-2024',
+      location: 'Lyon - Distanciel',
+      description: 'Intégrateur web',
+    },
+    {
+      icon: 'fa-star',
       title: 'Stage Kaffein Agency',
       year: '2022',
       location: 'Champagne au mont d\'or',
