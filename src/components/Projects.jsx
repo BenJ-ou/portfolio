@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "Projet architecte sophie bluel",
-    image: "/image/Sophie-B.png",
+    image: "/image/SophieB.JPG",
     link: "https://benj-ou.github.io/Portfolio-architecte-sophie-bluel/FrontEnd/index.html",
     description: "html, css, javascript",
     detailedDescription:"J'ai créé une page web dynamique pour une architecte d'intérieur en utilisant JavaScript et une API. J'ai développé la présentation des travaux, une page de connexion administrateur et une modale pour uploader des médias. Ce projet m'a permis de maîtriser la gestion des événements et la manipulation du DOM.",
