@@ -66,9 +66,10 @@
     box-shadow: 0 0.5em 3rem -1rem #d2691e;
 }
 
-.card h4 {
+.card h1 {
     margin: 0 0 0.5em;
     min-height: 20px;
+    font-size: 16px;
 }
 
 .card p {
@@ -78,8 +79,8 @@
 }
 
 .card img {
-    width: 244px;
-    height: 244px;
+    width: 239px;
+    height: 220px;
     border-radius: 2px;
 }
 

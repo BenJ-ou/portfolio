@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "Ninacarducci Portfolio",
-    image: "/image/Ninacarducci.png",
+    image: "/image/Ninacarducci.webp",
     link: "https://benj-ou.github.io/ninacarducci.github.io/",
     description: "html, js , Optimiser référencement",
     detailedDescription:"J'ai optimisé le référencement, la performance et l'accessibilité d'un site en identifiant les problèmes et en appliquant des améliorations avec des outils comme Lighthouse et Wave. J'ai ensuite créé un rapport montrant les résultats avant et après les modifications.",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "Projet architecte sophie bluel",
-    image: "/image/SophieB.JPG",
+    image: "/image/Sophie-B.webp",
     link: "https://benj-ou.github.io/Portfolio-architecte-sophie-bluel/FrontEnd/index.html",
     description: "html, css, javascript",
     detailedDescription:"J'ai créé une page web dynamique pour une architecte d'intérieur en utilisant JavaScript et une API. J'ai développé la présentation des travaux, une page de connexion administrateur et une modale pour uploader des médias. Ce projet m'a permis de maîtriser la gestion des événements et la manipulation du DOM.",
@@ -29,7 +29,7 @@ const projects = [
  
   {
     title: "Print it!",
-    image: "/image/print-it.PNG",
+    image: "/image/print-it.webp",
     link: "https://benj-ou.github.io/Print-it-JS/",
     description: "html, css, javascript.",
     detailedDescription:"J'ai ajouté un carrousel interactif à un site d'imprimerie statique en utilisant JavaScript. Ce projet m'a permis de découvrir comment JavaScript interagit avec HTML et CSS pour dynamiser un site web.",
@@ -69,7 +69,7 @@ const Projects = () => {
               <div className="card-content">
                 <img src={project.image} alt={project.title} />
                 <div className="project">
-                  <h4>{project.title}</h4>
+                  <h1>{project.title}</h1>
                   <p className="description">{project.description}</p>
                   <p className="dates">{project.year}</p>
                   <div className="detailed-description">

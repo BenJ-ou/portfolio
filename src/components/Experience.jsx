@@ -58,7 +58,7 @@ const Experience = () => {
           </a>
         </div>
         {experiences.map((exp, index) => {
-          const rowClass = index % 2 === 0 ? 'row-1' : 'row-2'; // Alternance gauche/droite
+          const rowClass = index % 2 === 0 ? 'row-1' : 'row-2'; 
           return (
             <div className={`row ${rowClass}`} key={index}>
               <ExperienceItem

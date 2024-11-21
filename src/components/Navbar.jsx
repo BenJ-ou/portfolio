@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="profile">
-        <img src="/image/image.png" alt="profile" className="profile-img" />
+        <img src="/image/image.webp" alt="profile" className="profile-img" />
         <h1 className="font-semibold">PRINCE BENJAMIN</h1>
       </div>
       <ul>

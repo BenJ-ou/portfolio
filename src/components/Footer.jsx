@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="colonne">
-        <h3>Me Contacter</h3>
+        <h1>Me Contacter</h1>
         <a href="mailto:prince-benjamin@hotmail.com">
           <p>prince-benjamin@hotmail.com</p>
         </a>
