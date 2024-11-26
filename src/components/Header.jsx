@@ -11,7 +11,7 @@ const Header = () => {
         <p class="mb-4 font-medium">Avant d’intégrer un cursus Intégrateur web, j’ai obtenu un master "Professorat des écoles" à l’Université Claude Bernard, Lyon1, ainsi qu'une licence "Lettre/Art du spectacle" à Lyon2. A travers ces cursus, j’ai pu gagner en <strong>efficacité </strong> et en <strong>autonomie</strong> dans mon travail et acquérir une certaine <strong>adaptabilité.</strong> </p>
         <p class="mb-4 font-medium">Aujourd'hui, je m'épanouis pleinement dans le domaine du web, ma <strong>formation me permet d'évoluer en tant que développeur "Intégrateur web"</strong>. Je suis toutefois particulièrement ouvert pour <strong>découvrir de nouvelles "technos"</strong> et à approfondir la partie front-end, qui me permet de faire un lien avec mon intérêt pour l'art et ma sensibilité artistique.</p>
         <p class="mb-4 font-medium">Si vous êtes à la recherche d'un développeur intégrateur web motivé, <strong>n'hésitez pas à me contacter.</strong></p> 
-        <a className="button" target="_blank" href="/image/Dev web Intégrateur CV (8).pdf"> Curriculum Vitae</a>
+        <a className="button" target="_blank" href="/image/integrateur-web-cv.pdf"> Curriculum Vitae</a>
       </div>
     </header>
 );
