@@ -52,11 +52,9 @@ const Experience = () => {
     <section id="experience" className="experience-formation text-xl">
       <h1>Expériences</h1>
       <div className="wrapper">
-        <div className="center-line">
-          <a href="#experience" className="scroll-icon">
-            <i className="fas fa-caret-up"></i>
-          </a>
-        </div>
+      <div className="center-line">
+  <a href="#experience" className="scroll-icon" aria-label="Scroll section"></a>
+</div>
         {experiences.map((exp, index) => {
           const rowClass = index % 2 === 0 ? 'row-1' : 'row-2'; 
           return (
