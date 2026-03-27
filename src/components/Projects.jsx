@@ -3,6 +3,14 @@ import '../styles/Projects.css';
 
 const projects = [
   {
+    title: "Carte Interactive du Japon",
+    image: "/image/projet_map_japon.webp",
+    link: "https://benj-ou.github.io/Projet-map-Japon/",
+    description: "html,css,js",
+    detailedDescription: "J'ai créé une carte interactive du Japon avec HTML, CSS et JavaScript. J'ai utilisé des données de l'API OpenStreetMap pour afficher les informations sur les villes et les routes. J'ai également utilisé des fonctions de JavaScript pour ajouter des événements et des animations à l'interface utilisateur.",
+    year: 2025,
+  },
+  {
     title: "ArgentBank website",
     image: "/image/argentbank.webp",
     link: "https://github.com/BenJ-ou/ArgentBank-website",

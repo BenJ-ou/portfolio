@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -10,8 +10,8 @@ const Navbar = () => {
       </div>
       <ul>
         <li><a href="#projects-section">Mes projets</a></li>
-        <li><a target="_blank" href="/image/integrateur-web-cv.pdf">Curriculum Vitae</a></li>
-        <li><a target="_blank" href="https://github.com/BenJ-ou">Github</a></li>
+        <li><a target="_blank" rel="noreferrer" href="/image/integrateur_web_cv_BP.pdf">CV</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://github.com/BenJ-ou">Github</a></li>
       </ul>
     </nav>
   );
